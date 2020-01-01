@@ -1,0 +1,17 @@
+// hello.proto is a hello world example in gRPC
+
+syntax = "proto3";
+
+package hello;
+
+service Greeter {
+	rpc SayHello (HelloRequest) returns (stream HelloReply) {}
+}
+
+message HelloRequest {
+	string name = 1;
+}
+
+message HelloReply {
+	string message = 1;
+}
