@@ -1,0 +1,4 @@
+*.swp
+*secret*
+dart/.dart_tool/
+dart/.packages
